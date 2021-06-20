@@ -2,6 +2,7 @@ package com.loja.lojavirtual
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.heinrichreimersoftware.materialintro.app.IntroActivity
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide
 import com.loja.lojavirtual.Form.FormLogin
@@ -27,7 +28,6 @@ class Slides : IntroActivity() {
                 .build())
 
 
-
         addSlide(SimpleSlide.Builder()
             .background(R.color.azul)
             .title("Crie uma conta grátis")
@@ -36,12 +36,14 @@ class Slides : IntroActivity() {
             .build())
 
     }
-
-    public override fun onDestroy() {
-        super.onDestroy()
+    
+    public override fun onPause() {
+        super.onPause()
 
         var intent = Intent(this,FormLogin::class.java)
         startActivity(intent)
     }
 
+
 }
+

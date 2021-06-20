@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaVirtual">
-        <activity android:name=".Form.FormCadastro"></activity>
+        <activity android:name=".Form.FormCadastro"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".Form.FormLogin" />
         <activity
