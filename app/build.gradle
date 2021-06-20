@@ -45,6 +45,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     // Primeira tentativa material-intro
     implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
     //Segunda tentativa material-intro implementation 'agency.tango.android:material-intro-screen:{latest_release}'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

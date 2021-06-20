@@ -36,7 +36,7 @@ class Slides : IntroActivity() {
             .build())
 
     }
-    
+
     public override fun onPause() {
         super.onPause()
 
