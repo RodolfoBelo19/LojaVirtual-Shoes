@@ -25,6 +25,8 @@ class FormLogin : AppCompatActivity() {
         binding = ActivityFormLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        VerificarUsuarioLogado()
+
         supportActionBar!!.hide()
 
         var tela_cadastro = binding.telaCadastro
@@ -59,6 +61,15 @@ class FormLogin : AppCompatActivity() {
             }.addOnFailureListener {
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    private fun VerificarUsuarioLogado(){
+
+        val usuarioLocal = FirebaseAuth.getInstance().currentUser
+
+        if(usuarioLocal != null){
+            AbrirTelaPrincipal()
         }
     }
 
